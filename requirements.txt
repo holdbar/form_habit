@@ -1,0 +1,8 @@
+# form_habit
+# requirements.txt
+
+django==1.11.5
+djangorestframework==3.6.4
+django-filter==1.0.4
+
+

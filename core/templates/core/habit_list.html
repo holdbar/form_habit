@@ -1,0 +1,10 @@
+<div>
+    <h1><a href="/">Form Your Habit</a></h1>
+</div>
+
+{% for habit in habits %}
+    <div>
+        <p>started: {{ habit.created }}</p>
+        <h1><a href="">{{ habit.name }}</a></h1>
+    </div>
+{% endfor %}
