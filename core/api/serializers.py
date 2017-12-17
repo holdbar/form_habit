@@ -80,7 +80,7 @@ class UserSerializer(serializers.ModelSerializer):
             "date_joined",
         ]
         extra_kwargs = {
-            "url": {"view_name": "users:user-detail", },
+            "url": {"view_name": "core:user-detail", },
             model.USERNAME_FIELD: {"required": True, },
             "email": {"required": True, },
             "password": {"write_only": True},

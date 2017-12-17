@@ -256,7 +256,7 @@ class UserViewSet(ModelViewSet):
         OrderingFilter,
     ]
     permission_classes = [UserPermissions, ]
-    filter_fields = ["name", ]
+    filter_fields = ["username", ]
     ordering_fields = ["id", ]
     
 

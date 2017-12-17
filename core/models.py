@@ -27,7 +27,7 @@ class Habit(models.Model):
     finished = models.BooleanField(verbose_name=_("finished"), db_index=True, default=False)
     dropped = models.BooleanField(verbose_name=_("dropped"), db_index=True, default=False)
     created = models.DateTimeField(verbose_name=_("habit creation date and time"), blank=True, null=True, db_index=True, auto_now_add=True)
-    updated = models.DateTimeField(verbose_name=_("formed/dropped datet and ime"), blank=True, null=True, db_index=True, auto_now=True)
+    updated = models.DateTimeField(verbose_name=_("formed/dropped date and ime"), blank=True, null=True, db_index=True, auto_now=True)
 
     objects = HabitManager()
 
