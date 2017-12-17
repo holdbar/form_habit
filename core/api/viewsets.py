@@ -152,7 +152,7 @@ class HabitViewSet(ModelViewSet):
 
         return Response(serializer.data)
 
-    @list_route(methods=[GET, ])
+    @list_route(methods=[GET, ], url_path="my/finished")
     def my__finished(self, request, **kwargs):
         """
         Return only finished user owned habits.
@@ -177,7 +177,7 @@ class HabitViewSet(ModelViewSet):
 
         return Response(serializer.data)
 
-    @list_route(methods=[GET, ])
+    @list_route(methods=[GET, ], url_path="my/unfinished")
     def my__unfinished(self, request, **kwargs):
         """
         Return only unfinished user owned groups.
@@ -202,7 +202,7 @@ class HabitViewSet(ModelViewSet):
 
         return Response(serializer.data)
 
-    @list_route(methods=[GET, ])
+    @list_route(methods=[GET, ], url_path="my/dropped")
     def my__dropped(self, request, **kwargs):
         """
         Return only dropped user owned groups.

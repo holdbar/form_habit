@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+
+# form_habit
+# form_habit/form_habit/settings.py
+
 """
 Django settings for form_habit project.
 
@@ -39,6 +44,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_filters",
     "rest_framework",
+    "rest_framework.authtoken",
     "core",
 ]
 

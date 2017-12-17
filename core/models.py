@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+
+# form_habit
+# form_habit/core/models.py
+
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import AbstractUser
@@ -5,7 +10,11 @@ from django.utils.translation import ugettext_lazy as _
 
 from core.api.managers import HabitManager
 
-# Create your models here.
+__all__ = [
+    "Habit",
+    "HabitLog",
+    "User",
+]
 
 class Habit(models.Model):
     """

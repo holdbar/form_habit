@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+
+# form_habit
+# form_habit/core/admin.py
+
 from django.contrib import admin
 from core.models import Habit, HabitLog, User
 

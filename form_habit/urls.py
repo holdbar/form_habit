@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+
+# form_habit
+# form_habit/form_habit/urls.py
+
 """form_habit URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -13,10 +18,14 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+
 from django.conf.urls import include, url
 from django.contrib import admin
 from core.api.routers import router
 
+__all__ = [
+    "urlpatterns",
+]
 
 urlpatterns = [
     url(r"^admin/", admin.site.urls),

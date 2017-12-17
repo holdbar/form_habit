@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+
+# form_habit
+# form_habit/form_habit/wsgi.py
+
 """
 WSGI config for form_habit project.
 

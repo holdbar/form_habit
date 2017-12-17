@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # form_habit
-# form_habit/constants.py
+# form_habit/core/constants.py
 
 
 __all__ = [

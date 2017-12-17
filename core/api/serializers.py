@@ -1,6 +1,17 @@
+# -*- coding: utf-8 -*-
+
+# form_habit
+# form_habit/core/api/serializers.py
+
 from rest_framework import serializers
 from core.models import Habit, HabitLog, User
 
+
+__all__ = [
+    "HabitSerializer",
+    "HabitLogSerializer",
+    "UserSerializer",
+]
 
 class HabitSerializer(serializers.ModelSerializer):
     """

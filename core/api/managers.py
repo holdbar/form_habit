@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # form_habit
-# /core/api/managers/group.py
+# form_habit/core/api/managers.py
 
 from __future__ import unicode_literals
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # form_habit
-# core/api/querysets.py
+# form_habit/core/api/querysets.py
 
 from django.db import models
 
