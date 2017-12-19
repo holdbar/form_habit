@@ -24,7 +24,7 @@ class HabitManager(models.Manager):
         """
         Override to return custom queryset.
 
-        :return: Group model queryset instance.
+        :return: Habit model queryset instance.
         :rtype: mk42.apps.core.querysets.group.GroupQuerySet.
         """
 
