@@ -2,7 +2,6 @@
 
 # form_habit
 # form_habit/core/models.py
-import uuid
 
 from django.db import models
 from django.conf import settings
@@ -22,7 +21,6 @@ class Habit(models.Model):
     User habit model.
     """
 
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False, verbose_name=_("ID"))
     name = models.CharField(verbose_name=_("name"), max_length=256, db_index=True)
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, verbose_name=_("owner"), db_index=True, related_name="owned")
     finished = models.BooleanField(verbose_name=_("finished"), db_index=True, default=False)
@@ -54,7 +52,6 @@ class HabitLog(models.Model):
     User habit forming log.
     """
 
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False, verbose_name=_("ID"))
     habit = models.ForeignKey("core.Habit", verbose_name=_("habit"), db_index=True, related_name="logs")
     created = models.DateTimeField(verbose_name=_("creation date and time"), blank=True, null=True, db_index=True, auto_now_add=True)
 
@@ -80,7 +77,6 @@ class User(AbstractUser):
     User model.
     """
 
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False, verbose_name=_("ID"))
 
     class Meta:
 
