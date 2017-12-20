@@ -6,6 +6,7 @@
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import UserManager
 from django.utils.translation import ugettext_lazy as _
 
 from core.api.managers import HabitManager
@@ -77,6 +78,7 @@ class User(AbstractUser):
     User model.
     """
 
+    objects = UserManager()
 
     class Meta:
 

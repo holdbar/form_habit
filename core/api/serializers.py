@@ -96,3 +96,18 @@ class UserSerializer(serializers.ModelSerializer):
         ]
 
 
+    def create(self, validated_data):
+        """
+        On creation, replace the raw password with a hashed version.
+        :param validated_data: serializer validated data.
+        :type validated_data: dict.
+        :return: user model instance.
+        :rtype: form_habit.core.models.User.
+        """
+
+        obj = super(UserSerializer, self).create(validated_data=validated_data)
+        obj.set_password(obj.password)
+        obj.save()
+
+        return obj
+        
